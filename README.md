@@ -159,4 +159,4 @@ web    web-web.apps.cluster-87rmw.87rmw.sandbox817.opentlc.com          web     
 
 ```
 
-Note:  there is no access log
+Note:  there is no access log inside web pod of web project

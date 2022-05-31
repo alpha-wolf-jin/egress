@@ -12,7 +12,7 @@
 ~H
 # Command Line History (newest to oldest):
 :wq
-|2,0,1654005279,,"wq"
+|2,0,1654005381,,"wq"
 :w
 |2,0,1654004015,,"w"
 :q
@@ -44,38 +44,50 @@
 |3,0,5,1,1,0,1654001706,"git push -u origin main"
 
 # File marks:
-'0  162  28  ~/README.md
-|4,48,162,28,1654005279,"~/README.md"
-'1  40  8  ~/deploy-http.yaml
-|4,49,40,8,1654004703,"~/deploy-http.yaml"
+'0  162  58  ~/README.md
+|4,48,162,58,1654005381,"~/README.md"
+'1  162  28  ~/README.md
+|4,49,162,28,1654005279,"~/README.md"
 '2  40  8  ~/deploy-http.yaml
-|4,50,40,8,1654003520,"~/deploy-http.yaml"
-'3  57  55  ~/README.md
-|4,51,57,55,1654003116,"~/README.md"
+|4,50,40,8,1654004703,"~/deploy-http.yaml"
+'3  40  8  ~/deploy-http.yaml
+|4,51,40,8,1654003520,"~/deploy-http.yaml"
 '4  57  55  ~/README.md
 |4,52,57,55,1654003116,"~/README.md"
-'5  46  79  ~/README.md
-|4,53,46,79,1654002926,"~/README.md"
-'6  46  79  ~/README.md
-|4,54,46,79,1654002926,"~/README.md"
-'7  46  79  ~/README.md
-|4,55,46,79,1654002926,"~/README.md"
+'5  57  55  ~/README.md
+|4,53,57,55,1654003116,"~/README.md"
+'6  57  55  ~/README.md
+|4,54,57,55,1654003116,"~/README.md"
+'7  57  55  ~/README.md
+|4,55,57,55,1654003116,"~/README.md"
 '8  46  79  ~/README.md
 |4,56,46,79,1654002926,"~/README.md"
-'9  46  0  ~/README.md
-|4,57,46,0,1654002699,"~/README.md"
+'9  46  79  ~/README.md
+|4,57,46,79,1654002926,"~/README.md"
 
 # Jumplist (newest first):
+-'  162  58  ~/README.md
+|4,39,162,58,1654005381,"~/README.md"
 -'  162  28  ~/README.md
 |4,39,162,28,1654005279,"~/README.md"
 -'  40  8  ~/deploy-http.yaml
 |4,39,40,8,1654004703,"~/deploy-http.yaml"
+-'  40  8  ~/deploy-http.yaml
+|4,39,40,8,1654004703,"~/deploy-http.yaml"
+-'  40  8  ~/deploy-http.yaml
+|4,39,40,8,1654003520,"~/deploy-http.yaml"
 -'  40  8  ~/deploy-http.yaml
 |4,39,40,8,1654003520,"~/deploy-http.yaml"
 -'  1  0  ~/deploy-http.yaml
 |4,39,1,0,1654003457,"~/deploy-http.yaml"
 -'  1  0  ~/deploy-http.yaml
 |4,39,1,0,1654003457,"~/deploy-http.yaml"
+-'  1  0  ~/deploy-http.yaml
+|4,39,1,0,1654003457,"~/deploy-http.yaml"
+-'  1  0  ~/deploy-http.yaml
+|4,39,1,0,1654003457,"~/deploy-http.yaml"
+-'  57  55  ~/README.md
+|4,39,57,55,1654003123,"~/README.md"
 -'  57  55  ~/README.md
 |4,39,57,55,1654003123,"~/README.md"
 -'  57  55  ~/README.md
@@ -97,13 +109,15 @@
 -'  46  79  ~/README.md
 |4,39,46,79,1654002938,"~/README.md"
 -'  46  79  ~/README.md
-|4,39,46,79,1654002926,"~/README.md"
+|4,39,46,79,1654002938,"~/README.md"
 -'  46  79  ~/README.md
 |4,39,46,79,1654002926,"~/README.md"
 -'  46  79  ~/README.md
 |4,39,46,79,1654002926,"~/README.md"
 -'  46  79  ~/README.md
 |4,39,46,79,1654002926,"~/README.md"
+-'  46  79  ~/README.md
+|4,39,46,79,1654002926,"~/README.md"
 -'  46  0  ~/README.md
 |4,39,46,0,1654002699,"~/README.md"
 -'  46  0  ~/README.md
@@ -139,13 +153,17 @@
 -'  14  0  ~/README.md
 |4,39,14,0,1654002011,"~/README.md"
 -'  14  0  ~/README.md
-|4,39,14,0,1654001718,"~/README.md"
+|4,39,14,0,1654002011,"~/README.md"
 -'  14  0  ~/README.md
 |4,39,14,0,1654001718,"~/README.md"
 -'  14  0  ~/README.md
 |4,39,14,0,1654001718,"~/README.md"
 -'  14  0  ~/README.md
 |4,39,14,0,1654001718,"~/README.md"
+-'  14  0  ~/README.md
+|4,39,14,0,1654001718,"~/README.md"
+-'  1  0  ~/README.md
+|4,39,1,0,1654001657,"~/README.md"
 -'  1  0  ~/README.md
 |4,39,1,0,1654001657,"~/README.md"
 -'  1  0  ~/README.md
@@ -184,10 +202,10 @@
 # History of marks within files (newest to oldest):
 
 > ~/README.md
-	*	1654005278	0
-	"	162	28
-	^	162	29
-	.	162	28
+	*	1654005380	0
+	"	162	58
+	^	162	59
+	.	162	58
 	+	15	2
 	+	11	23
 	+	14	69
@@ -220,7 +238,7 @@
 	+	144	43
 	+	156	110
 	+	157	0
-	+	162	28
+	+	162	58
 
 > ~/deploy-http.yaml
 	*	1654004702	0
