@@ -12,9 +12,9 @@
 ~H
 # Command Line History (newest to oldest):
 :wq
-|2,0,1654002926,,"wq"
+|2,0,1654003116,,"wq"
 :w
-|2,0,1654002343,,"w"
+|2,0,1654003035,,"w"
 
 # Search String History (newest to oldest):
 
@@ -36,24 +36,38 @@
 |3,0,3,1,1,0,1654001706,"git push -u origin main"
 
 # File marks:
-'0  46  79  ~/README.md
-|4,48,46,79,1654002926,"~/README.md"
-'1  46  0  ~/README.md
-|4,49,46,0,1654002699,"~/README.md"
-'2  14  0  ~/README.md
-|4,50,14,0,1654001718,"~/README.md"
-'3  14  0  ~/README.md
-|4,51,14,0,1654001718,"~/README.md"
-'4  14  0  ~/README.md
-|4,52,14,0,1654001718,"~/README.md"
+'0  57  55  ~/README.md
+|4,48,57,55,1654003116,"~/README.md"
+'1  46  79  ~/README.md
+|4,49,46,79,1654002926,"~/README.md"
+'2  46  79  ~/README.md
+|4,50,46,79,1654002926,"~/README.md"
+'3  46  0  ~/README.md
+|4,51,46,0,1654002699,"~/README.md"
+'4  46  0  ~/README.md
+|4,52,46,0,1654002699,"~/README.md"
 '5  14  0  ~/README.md
 |4,53,14,0,1654001718,"~/README.md"
+'6  14  0  ~/README.md
+|4,54,14,0,1654001718,"~/README.md"
+'7  14  0  ~/README.md
+|4,55,14,0,1654001718,"~/README.md"
+'8  14  0  ~/README.md
+|4,56,14,0,1654001718,"~/README.md"
+'9  14  0  ~/README.md
+|4,57,14,0,1654001718,"~/README.md"
 
 # Jumplist (newest first):
+-'  57  55  ~/README.md
+|4,39,57,55,1654003116,"~/README.md"
+-'  46  79  ~/README.md
+|4,39,46,79,1654002938,"~/README.md"
 -'  46  79  ~/README.md
 |4,39,46,79,1654002926,"~/README.md"
 -'  46  0  ~/README.md
 |4,39,46,0,1654002699,"~/README.md"
+-'  14  0  ~/README.md
+|4,39,14,0,1654002011,"~/README.md"
 -'  14  0  ~/README.md
 |4,39,14,0,1654002011,"~/README.md"
 -'  14  0  ~/README.md
@@ -66,21 +80,27 @@
 |4,39,1,0,1654001657,"~/README.md"
 -'  1  0  ~/README.md
 |4,39,1,0,1654001657,"~/README.md"
+-'  1  0  ~/README.md
+|4,39,1,0,1654001657,"~/README.md"
 
 # History of marks within files (newest to oldest):
 
 > ~/README.md
-	*	1654002926	0
-	"	46	79
-	^	46	80
-	.	46	79
+	*	1654003116	0
+	"	57	55
+	^	57	56
+	.	57	55
 	+	15	2
 	+	11	23
 	+	14	69
 	+	11	0
 	+	14	0
-	+	48	2
+	+	67	2
 	+	33	205
 	+	43	0
 	+	45	0
 	+	46	79
+	+	55	159
+	+	65	45
+	+	66	0
+	+	57	55
