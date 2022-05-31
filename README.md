@@ -65,3 +65,98 @@ ip-10-0-223-145.us-east-2.compute.internal   ip-10-0-223-145.us-east-2.compute.i
        valid_lft forever preferred_lft forever
 
 ```
+
+
+## Setup POD in the egress project
+
+Will use curl command inside pod to access web. Expect web should record egress IP access.
+
+```
+$ echo hello-world-01 >index-01.html
+
+$ vim deploy-http.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: web
+    app.kubernetes.io/component: web
+    app.kubernetes.io/instance: web
+  name: web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      deployment: web
+  template:
+    metadata:
+      labels:
+        deployment: web
+    spec:
+      containers:
+      - image: registry.redhat.io/rhel8/httpd-24:1-161.1638356842
+        name: web
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+        - containerPort: 8443
+          protocol: TCP
+        resources: {}
+        volumeMounts:
+        - name: index-html
+          mountPath: /var/www/html/index.html
+          readOnly: true
+          subPath: index.html
+      volumes:
+      - configMap:
+          defaultMode: 420
+          items:
+          - key: index.html
+            path: index.html
+          name: index-html
+        name: index-html
+
+$ oc apply -f ./deploy-http.yaml 
+
+$ oc get pod
+NAME                   READY   STATUS    RESTARTS   AGE
+web-68667fc959-wrhmp   1/1     Running   0          20s
+
+```
+
+# Set up web 
+
+```
+$ oc new-project web
+
+$ echo "Egress Test"  >index-02.html
+
+$ oc create configmap index-html --from-file=index.html=./index-02.html
+
+$ oc apply -f ./deploy-http.yaml 
+
+$ oc get pod
+NAME                   READY   STATUS    RESTARTS   AGE
+web-68667fc959-5rpsr   1/1     Running   0          13s
+
+$ oc get deploy
+NAME   READY   UP-TO-DATE   AVAILABLE   AGE
+web    1/1     1            1           35s
+
+$ oc expose deployment.apps/web
+
+$ oc get svc
+NAME   TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)             AGE
+web    ClusterIP   172.30.223.217   <none>        8080/TCP,8443/TCP   6s
+
+$ oc expose svc web
+
+$ oc get route
+NAME   HOST/PORT                                                 PATH   SERVICES   PORT     TERMINATION   WILDCARD
+web    web-web.apps.cluster-87rmw.87rmw.sandbox817.opentlc.com          web        port-1                 None
+
+
+
+```
+
+Note:  there is no access log
